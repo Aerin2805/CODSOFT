@@ -6,7 +6,7 @@ CODESOFT is a vibrant and diverse community that brings together individuals wit
 We believe in the power of leadership and its ability to drive positive change. That's why we provide platforms and resources for our community members to develop their leadership skills. Through mentorship programs, workshops, and collaborative projects, we empower individuals to take on leadership roles and make a difference in their respective fields.
 ## Level 1 
    <ul>
-   <li> <a><h2>Calculator</h2></a>
+   <li> <a href="https://aerin2805.github.io/CODSOFT/level-1/calculator/"><h2>Calculator</h2></a>
        
    </li>
 
