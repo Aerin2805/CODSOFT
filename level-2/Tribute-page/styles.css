@@ -1,0 +1,147 @@
+/* Reset some default styles to improve consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply styles to the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  /* Apply styles to the container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  /* Style the header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: #ebe5e5;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Style the main content */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  main section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add hover effect and 3D effect */
+  main section:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the headings in the cards */
+  main h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the paragraphs in the cards */
+  main p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Style the footer */
+  footer {
+    text-align: center;
+    font-size: 25px;
+    color: #888;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+/* Add this CSS after the previous code */
+/* Style the image gallery */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+/* Style the images in the gallery */
+.image-gallery img {
+  max-width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect to images */
+.image-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+  
+  /* Add some visual enhancements */
+  main section:nth-child(odd) {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  main section:nth-child(even) {
+    background-color: #e5e5e5;
+    padding: 20px;
+  }
+  /* Add this CSS to your "styles.css" file after the previous code */
+
+/* Complex grid layout for main content */
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with a 1:2 ratio */
+    grid-gap: 20px; /* Gap between grid items */
+  }
+  
+  /* Style the left column of the grid */
+  main section:nth-child(odd) {
+    grid-column: 1; /* Place odd sections in the first column */
+  }
+  
+  /* Style the right column of the grid */
+  main section:nth-child(even) {
+    grid-column: 2; /* Place even sections in the second column */
+  }
+  
+  /* Responsive layout adjustments */
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr; /* Change to a single column layout on small screens */
+    }
+  }
+  
